@@ -5814,11 +5814,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\TaskList2\\ApiTaskList.csproj",
+      "projectUniqueName": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\ApiTaskList\\ApiTaskList.csproj",
       "projectName": "ApiTaskList",
-      "projectPath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\TaskList2\\ApiTaskList.csproj",
+      "projectPath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\ApiTaskList\\ApiTaskList.csproj",
       "packagesPath": "C:\\Users\\антон\\.nuget\\packages\\",
-      "outputPath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\TaskList2\\obj\\",
+      "outputPath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\ApiTaskList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

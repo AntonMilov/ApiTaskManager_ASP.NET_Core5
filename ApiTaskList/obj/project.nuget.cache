@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9TxxTKkdgv2JNqSucFEGUW6a5KzlhDI7JE8pR0eSe/IL53uB/VLIUZcoufBMw+5+y8JwBxobNqsJBtvJLxaXpA==",
+  "dgSpecHash": "6YNoz5v4veIraepN3b6Qqvjt4KPKu5E30L+cUgHeib3cRJeKgKE7KcjUKE0SP2lBPcwUQIdTbEBldi2pApo4pQ==",
   "success": true,
-  "projectFilePath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\TaskList2\\ApiTaskList.csproj",
+  "projectFilePath": "C:\\AntonProgramms2\\ApiTaskManager_ASP.NET_Core5\\ApiTaskList\\ApiTaskList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\антон\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\антон\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
