@@ -13,6 +13,7 @@ namespace TaskList2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TaskController : ApiCrudControllerBase<Entities.Task, TaskModel>
     {
         IHistoryTaskRepository historyTaskRepository;

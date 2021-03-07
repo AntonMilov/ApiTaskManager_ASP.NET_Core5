@@ -16,7 +16,7 @@ namespace TaskList2.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ApiCrudControllerBase<T, A> : ApiGetController<T, A>
-        where T : class, IEntityBase, new()
+      where T : class, IEntityBase, new()
       where A : class, IModel, new()
     {
         public ApiCrudControllerBase(IMapper mapper) : base(mapper)
@@ -28,7 +28,7 @@ namespace TaskList2.Controllers
             var model = _mapper.Map<T>(value);
             return rep.Create(model);
         }
-        //[Authorize]
+        [Authorize]
         [HttpPatch]
         public IActionResult UpdateById(Guid Id, A value)
         {

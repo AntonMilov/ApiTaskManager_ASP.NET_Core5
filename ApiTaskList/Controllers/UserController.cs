@@ -19,15 +19,14 @@ namespace TaskList2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ApiCrudControllerBase<User,UserModel>
+    public class UserController : ApiCrudControllerBase<User, UserModel>
     {
-     
-           public UserController(IUserRepository rep, IMapper mapper) : base( mapper)
+        public UserController(IUserRepository rep, IMapper mapper) : base(mapper)
         {
             this.rep = rep;
         }
         [HttpPost("SendKeyEmail")]
-        public  IActionResult SendKeyEmail(Guid Id,UserModel user)
+        public IActionResult SendKeyEmail(Guid Id, UserModel user)
         {
             var keyGenerator = new KeyGenerator();
             var emailService = new EmailService();
@@ -42,13 +41,13 @@ namespace TaskList2.Controllers
             foreach (WaitKeyConfirmation users in Program.waitKeyConfirmations)
             {
                 if (users.UserId == waitKeyConfirmation.UserId)
-                   
+
                 {
                     if (users.Key == waitKeyConfirmation.Key)
                     {
-                        var user=rep.GetSingle(waitKeyConfirmation.UserId);
+                        var user = rep.GetSingle(waitKeyConfirmation.UserId);
                         user.StatusActivated = true;
-                        rep.UpdateById(user.Id,user);
+                        rep.UpdateById(user.Id, user);
                         Program.waitKeyConfirmations.Remove(waitKeyConfirmation);
                         return Ok();
                     }
@@ -65,7 +64,7 @@ namespace TaskList2.Controllers
         [HttpPost("GetToken")]
         public IActionResult GetToken(Guid ID)
         {
-            var user=rep.GetSingle(ID);
+            var user = rep.GetSingle(ID);
             if (user.StatusActivated)
             {
                 var token = GenerateJWT(user);
